@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotatingCube : MonoBehaviour
+public class AnimatorChallengeScript : MonoBehaviour
 {
     
     //Animator reference.
@@ -22,11 +22,11 @@ public class RotatingCube : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab) && m_Animator.GetBool("Spin") == false)
         {
-            m_Animator.SetBool("Spin", true);
+            m_Animator.SetBool("Cube_AnimController", true);
         }
         else 
         {
-            m_Animator.SetBool("Spin", false);
+            m_Animator.SetBool("Cube_AnimController", false);
 
         } 
         
